@@ -55,6 +55,7 @@ const frontendManager = {
 		this.modal.append(this.closeButton, this.iframeWrapper);
 
 		this.closeButton.addEventListener('click', () => this.close());
+		this.modal.addEventListener('click', () => this.close());
 	},
 	open(url) {
 		this.iframe.src = url + '&frame=1';
